@@ -1,13 +1,12 @@
-import { MyButton } from "./MyButton";
+import Greeting from "./tp1/Greeting";
 
 function App() {
-  const handleClick = () => {
-    console.log("Clicked");
-  }
+  
   return (
-    <>
-      <MyButton label="Clique sur moi" onClick={handleClick} />
-    </>
+    <div>
+      <Greeting name="John Doe" age={24} />
+      <Greeting name="test" />
+    </div>
   )
 }
 
