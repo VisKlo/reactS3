@@ -1,13 +1,14 @@
-import Greeting from "./tp1/Greeting";
+import React from "react";
+import { Header } from "@organisms/Header/Header";
+import { ProductList } from "@pages/ProductsList";
 
-function App() {
-  
+const App: React.FC = () => {
   return (
     <div>
-      <Greeting name="John Doe" age={24} />
-      <Greeting name="test" />
+      <Header />
+      <ProductList />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
